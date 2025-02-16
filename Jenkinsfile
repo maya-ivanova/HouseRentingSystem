@@ -1,6 +1,6 @@
 node {
     stage('Checkout Code') {
-        git branch: 'main', url: 'https://github.com/maya-ivanova/HouseRentingSystem.git'
+        git branch: 'master', url: 'https://github.com/maya-ivanova/HouseRentingSystem.git'
     }
     stage('Restore NuGet packages'){
         bat 'dotnet restore HouseRentingSystem.sln'
